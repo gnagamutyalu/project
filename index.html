@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="formbody">
+        <form action="">
+            <h1>Login</h1>
+            <div class="inbox">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="inbox">
+                <input type="text" placeholder="Email" required>
+                <i class='bx bxl-gmail'></i>
+            </div>
+            <div class="inbox">
+                <input type="password" placeholder="password" required id="show">
+                <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="pass-forgot">
+            <label><input type="checkbox" onclick="myfun()">show password</label>
+            <a href="#">Forgot password</a>
+           </div>
+           <button type="submit" class="btn"><b>Login</b> </button>
+             <div class="reagister-link">
+                <p>Dont Have an account?  <a href="#">Register</a></p>
+             </div>
+
+            </div>
+        </form>
+        <script type="text/javascript">
+            function myfun(){
+                var show= document.getElementById('show');
+                if(show.type=='password'){
+                    show.type='text';
+                }
+                else{show.type='password'}
+            }
+        </script>
+    
+</body>
+</html>
